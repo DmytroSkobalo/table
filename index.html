@@ -49,13 +49,30 @@
           </tr>
         </table><br><br><br>  
       <form method="POST"  action="https://formspree.io/skobalo88@mail.ru">
-          <label for="name">Введіть ім'я:</label>
-          <input type="text" id="name" name="name"><br><br>
+          <label for="name"> Ім'я:</label>
+          <input type="text" id="name" name="name" title="Введіть будь-ласка своє ім'я"><br><br>
           
-          <label for="password">Введіть пароль:</label>
-          <input type="password" id="password" name="password"><br><br>
+          <label for="password">Пароль:</label>
+          <input type="password" id="password" name="password" title="Введіть будь-ласка свій пароль"><br><br>
           
-          <input type="submit" name="Відправити">
+          <label for="textarea">Напишіть будь-ласка свої коментарі:</label>
+          <textarea rows="20" cols="45" name="textarea" placeholder="Не більше 333 символів!" maxlength="333"></textarea><br><br>
+          
+          <label for="like">Вам сподобалась ця сторінка?</label>
+          <input type="radio" name="like" value="Так">Так
+          <input type="radio" name="like" value="Ні">Ні
+          <input type="radio" name="like" value="Можливо...">Можливо...<br><br>
+          
+          <label for="whatColor">Якого кольору має бути фон сторінки?</label>
+          <select name="whatColor" size=5 multiple>
+              <option values="Зелений">Зелений</option>
+              <option values="Червоний">Червоний</option>
+              <option values="Жовтий">Жовтий</option>
+              <option values="Голубий">Голубий</option>
+              <option values="Рожевий">Рожевий</option>
+          </select><br><br>
+          
+          <input type="submit" name="send" value="Відправити">
       </form>    
     </body>
 </html>
